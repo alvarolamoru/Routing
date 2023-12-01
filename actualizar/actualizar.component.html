@@ -1,0 +1,37 @@
+
+<div class="container" >
+    <h1>{{title}}</h1>
+  <div class="form_empleado">
+    <div class="elemento">
+      <label for="">Nombre</label>
+      <input type="text" placeholder="Nombre" [(ngModel)]="nombreagg">
+    </div>
+
+    <div class="elemento">
+      <label for="">Apellido</label>
+      <input type="text" placeholder="Apellido" [(ngModel)]="apellidoagg">
+    </div>
+    <div class="elemento">
+      <label for="">Cargo</label>
+      <input type="text" placeholder="Cargo" [(ngModel)]="cargoagg">
+
+    </div>
+    <div class="elemento">
+      <label for="">Salario</label>
+      <input type="number" placeholder="Salario" [(ngModel)]="salarioagg">
+
+    </div>
+</div>
+
+    <input type="submit" value="Agregar" (click)="aggempleado()" class="boton">
+
+  <button (click)="eliminarempleado()">eliminar</button>
+
+</div>
+
+
+
+
+<div>
+    <button (click)="actualizarempleado()" >actualizar empleado</button>
+</div>

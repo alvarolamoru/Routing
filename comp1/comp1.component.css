@@ -1,0 +1,32 @@
+.emple{
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: 40px;
+}
+
+.form_empleado{
+  display: flex;
+  /* flex-direction: column; */
+}
+.elemento{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px ;
+}
+
+.boton{
+  margin-top: 15px;
+  background-color: rgb(76, 76, 255);
+  border-radius: 5px;
+}
+
+.paraconstructor{
+  color: aqua;
+}
+.paravendedor{
+  color: blueviolet;
+}
+.paraprogramador{
+  color: chartreuse;
+}

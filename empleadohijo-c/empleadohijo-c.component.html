@@ -1,0 +1,9 @@
+<div >
+ <a [routerLink]="['/actualizar',indice]"> {{indice+1}}: {{empleadodelista.nombre}} {{empleadodelista.apellido}} <span [ngClass]="{paraconstructor:empleadodelista.cargo=='Constructor',paravendedor:empleadodelista.cargo=='Vendedor',paraprogramador:empleadodelista.cargo=='Programador'}">{{empleadodelista.cargo}}</span> {{empleadodelista.salario}}</a>
+ <app-caracteristicas-c (Caracteristicaemisora)="addCaracteristica($event)"></app-caracteristicas-c>
+
+<p>Caracteristicas</p>
+<ul>
+  <li *ngFor="let i of caracteristicas">{{i}}</li>
+</ul>
+</div>
